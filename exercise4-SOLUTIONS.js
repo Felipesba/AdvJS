@@ -3,6 +3,7 @@
 //#1 Create a one line function that adds adds two parameters
 const sum = (a, b) => a + b
 
+
 //Closure: What does the last line return?
 const addTo = x => y => x + y
 var addToTen = addTo(10)
