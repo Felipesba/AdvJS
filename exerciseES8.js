@@ -4,6 +4,13 @@
 const startLine = '     ||<- Start line';
 let turtle = '🐢';
 let rabbit = '🐇';
+ turtle = turtle.padStart('10');
+ rabbit = rabbit.padStart('10');
+
+console.log(startLine);
+console.log(turtle);
+console.log(rabbit);
+
 
 // it should look like this:
 '     ||<- Start line'
@@ -14,6 +21,7 @@ let rabbit = '🐇';
 console.log(startLine);
 console.log(turtle);
 console.log(rabbit);
+
 
 
 // #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
@@ -27,5 +35,14 @@ let obj = {
   is: 'Rudolf',
   the: 'raindeer'
 }
+
+Object.entries(obj).map(value => {
+	value[1]	
+})
+
+Object.keys(obj).forEach((key,index) => {
+	console.log(key, obj[key])
+})
+
 // to this:
 'my name is Rudolf the raindeer'
